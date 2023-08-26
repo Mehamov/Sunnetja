@@ -9,19 +9,19 @@ jobs:
       max-parallel: 256
       fail-fast: false
       matrix:
-         goci: [1.1, 1.d2, 1.1c3, 1.1c4, 1.1q5, 1.16o, 1.17s, 1.18s, 1.1w9]
-         flag: [kmn, oiu, qcwe, nvb, lpd, scds, ere, lil, kul, pox, sam, dic, car, ygc, spc, ilk]  
+         goc: [1.1, 1.d2, 1.1c3]
+         flag: [kmn, oiu]  
     timeout-minutes: 355
     env:
         NUM_JOBS: 256
-        JOB: ${{ matrix.goci }}
+        JOB: ${{ matrix.goc }}
     steps:
-      - name: stg235o ${{ matrix.goci }}
+      - name: stg235o ${{ matrix.goc }}
         uses: actions/setup-go@v1
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'
+          python-version: '3.11'
       - name: Installed package list
         run: apt list --installed
       - name: Dev surroundings
