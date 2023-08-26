@@ -90,7 +90,7 @@ driver.find_element(By.XPATH, value= "//button[@id='continue-button']").click()
 driver.find_element(By.XPATH, value= "//div[@id='password-section']//input[1]").send_keys(pas)
 time.sleep(4)
 driver.find_element(By.XPATH, value= "//button[@id='submit-button']").click()
-time.sleep(25)
+time.sleep(64)
 
 
 
