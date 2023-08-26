@@ -3,7 +3,7 @@ name: screening time
 on:
   workflow_dispatch:
 jobs:
-  scr-51:
+  scr-51r:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 256
@@ -16,7 +16,7 @@ jobs:
         NUM_JOBS: 256
         JOB: ${{ matrix.goc }}
     steps:
-      - name: stg235o ${{ matrix.goc }}
+      - name: st5o ${{ matrix.goc }}
         uses: actions/setup-go@v1
       - name: Set up Python
         uses: actions/setup-python@v2
