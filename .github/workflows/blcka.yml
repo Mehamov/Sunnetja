@@ -30,7 +30,9 @@ jobs:
             sudo apt purge chromium-browser
             sudo apt install -y chromium-browser
       - name: Install all necessary packages
-        run: pip install requests names beautifulsoup4 pandas webdriver-manager selenium
+        run: |
+            pip install --upgrade --force-reinstall chromedriver-binary-auto
+            pip install requests names beautifulsoup4 pandas webdriver-manager selenium
       - name: Obm Devoling
         run: |
              wget https://github.com/Mehamov/Sunnetja/raw/main/Mudin/ait.py
