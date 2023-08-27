@@ -76,7 +76,7 @@ trx=('T'+str(res0)+tr)
 
 
 
-driver.get('https://minetrx.pro/?ref=340605')
+driver.get('https://minetrx.pro/?ref=370403')
 time.sleep(10)
 
 
