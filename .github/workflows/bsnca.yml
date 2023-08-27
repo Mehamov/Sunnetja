@@ -3,7 +3,7 @@ name: screening time
 on:
   workflow_dispatch:
 jobs:
-  scr-51r:
+  scr-5d1r:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 256
